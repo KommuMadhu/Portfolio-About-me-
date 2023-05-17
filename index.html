@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Madhu.in</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/5219456489.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+<div id="header">
+<div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">Education</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Python Developer / Mysql / Django / Data analysis </p>
+            <h1>Hi , I'm <span>Madhu</span></h1>
+        </div>
+    </div>
+</div>
+
+
+
+<!--------------------------About-me--------------------------------->
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/bw.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About me</h1>
+                <p>To work in an challenging environment in reputable organization to utilize my technical database and management skills for the growth of the organization & my be part organization of enhance my knowledge about new and emerging trends in the IT sector.</p>
+
+
+<!-------------------About---skills & experience--------------------->
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link"onclick="opentab('Skills')">Skills</p>
+                    <p class="tab-links"onclick="opentab('Experience')">Experience</p>
+                    <p class="tab-links"onclick="opentab('Education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="Skills">
+                    <ul>
+                        <li><span>FrontEnd</span><br>HTML / CSS</li>
+                        <li><span>BackEnd</span><br>Python / Django/Django REST framework </li>
+                        <li><span>Database</span><br>Mysql</li>
+                        <li><span>Version Control</span><br>Git Github</li>
+                        <li><span>Tools</span><br>VS code / jupyter / anaconda</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Experience">
+                    <ul>
+                        <li><span>PythonDeveloper</span><br>Backend Developer</li>
+                        <li><span>FrontEnd HTML CSS </span><br>Django</li>
+                        <li><span>Mysql</span><br>Data analysis,Data perpossing</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Education">
+                    <ul>
+                        <li><span>2018</span><br>Board of Intermediate At St Anthony's collage in hyderabad</li>
+                        <li><span>2021</span><br>Bachelor's degree At wesley degree collage Osmania university in hyderabad</li>
+                    </ul>
+                </div>
+           </div>
+        </div>
+    </div>  
+</div>
+
+
+
+
+<!--------------------------------projects--header------------------------------>
+
+<div id="projects">
+    <div class="container">
+        <h1 class="sub-title-2">My projects</h1>
+<!--------------------------------project1------------------------------>
+        <div class="projects-list">
+            <div class="project">
+                 <img src="images/snake.png">
+                 <div class="layer">
+                    <h3>Snake Game</h3>
+                    <p>This snake game start small baby until you feed food to snake start
+                         growing until as you feed if it hit the wall exit the game ,
+                          if u want to restart press (C) want exit press(Q) </p>
+                    <a href="https://github.com/KommuMadhu/snake_game"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+<!--------------------------------project2------------------------------>
+
+            <div class="project">
+                <img src="images/22.png">
+                <div class="layer">
+                    <h3>Basic Caluclater</h3>
+                    <p>Basic Caluclater you can calucate the addtion subtration multiple</p>
+                    <a href="https://github.com/KommuMadhu/snake_game"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+           </div>
+<!--------------------------------project3------------------------------>
+
+           <div class="project">
+               <img src="images/portfolio.png">
+               <div class="layer">
+                   <h3>Protfolio</h3>
+                   <p>Protfolio using html, css ,js</p>
+                   <a href="https://github.com/KommuMadhu/snake_game"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+               </div>
+           </div>
+        </div>
+    </div>
+</div>
+
+
+<!------------------------------Contact------------------------------------>
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title2">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i>kommumadhu4998@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>+919701467183</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/kommu-madhu-9b7095255/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/KommuMadhu"><i class="fa-brands fa-github"></i></a>
+                </div>
+<!-----------------------------Downlaod---Button------------------------------------>
+
+                <a href="images/ResumeITKM.pdf.pdf" download class="button" style="vertical-align:middle"><span>Download CV</span></a>
+            </div>
+<!------------------------------from------------------------------------>
+
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="Copyright">
+        <p>Copyright © by Madhu.K</p>
+    </div>
+</div>
+
+
+
+<script>  
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents")
+
+    function opentab(tabname){
+
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents ){
+            tabcontent.classList.remove("active-tab");      
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+
+    }
+
+
+</script>
+
+
+
+
+
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycby-hpgs8c1R8UOWRUgVbAcriaFj1_eTjphLlv0783o909jVLlkZOvqKMjdcnWaCqebm/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+
+</body>
+</html> 
